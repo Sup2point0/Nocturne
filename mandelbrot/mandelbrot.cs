@@ -32,10 +32,7 @@ public static class Mandelbrot
       }
     }
 
-    plane.Save(
-      $"""C:\Users\Han\Desktop\大维\Stuff\Documents\# Code\C#\Mandelbrot\renders\render ({size}x{size}).png""",
-      ImageFormat.Png
-    );
+    plane.Save($"render ({size}x{size}).png""", ImageFormat.Png);
 
     graphics.Dispose();
     plane.Dispose();
